@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import { hot } from 'react-hot-loader'
 import TodoList from "./todos/TodoList"
 import './App.css';
 
@@ -9,4 +10,4 @@ const App =() => (
     </div>
   );
 
-export default App;
+export default hot(module)(App);
